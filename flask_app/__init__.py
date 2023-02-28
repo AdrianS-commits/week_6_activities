@@ -7,6 +7,6 @@ def create_app():
 
     # Include the routes from app.py
     with app.app_context():
-        from . import routes
+        from . import hello
 
     return app
