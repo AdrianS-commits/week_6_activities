@@ -1,7 +1,8 @@
-from flask import Flask
+from flask import current_app as app
 
-app = Flask(__name__)
+# Remove this and the subsequent line, left in to show what was here before the Factory Application pattern was applied
+# app = Flask(__name__)
 
 @app.route("/")
 def index():
-    return "<p>Hello, World!</p>"
+    return "Hello, World!"
